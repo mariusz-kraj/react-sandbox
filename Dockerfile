@@ -1,6 +1,8 @@
 FROM mariuszkraj/frontend:7.x
+
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 
+RUN npm install -g webpack webpack-dev-server babel-cli
 
 WORKDIR /app
 
